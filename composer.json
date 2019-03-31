@@ -1,5 +1,5 @@
 {
-    "name": "sebastian/diff",
+    "name": "tmp/diff",
     "description": "Diff implementation",
     "keywords": ["diff", "udiff", "unidiff", "unified diff"],
     "homepage": "https://github.com/sebastianbergmann/diff",
