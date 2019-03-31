@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers SebastianBergmann\Diff\InvalidArgumentException
+ * @covers Tmp\Diff\InvalidArgumentException
  */
 final class InvalidArgumentExceptionTest extends TestCase
 {

@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers SebastianBergmann\Diff\ConfigurationException
+ * @covers Tmp\Diff\ConfigurationException
  */
 final class ConfigurationExceptionTest extends TestCase
 {

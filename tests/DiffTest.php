@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers SebastianBergmann\Diff\Diff
+ * @covers Tmp\Diff\Diff
  *
- * @uses SebastianBergmann\Diff\Chunk
+ * @uses Tmp\Diff\Chunk
  */
 final class DiffTest extends TestCase
 {

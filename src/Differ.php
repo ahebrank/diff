@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
-use SebastianBergmann\Diff\Output\DiffOutputBuilderInterface;
-use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
+use Tmp\Diff\Output\DiffOutputBuilderInterface;
+use Tmp\Diff\Output\UnifiedDiffOutputBuilder;
 
 /**
  * Diff implementation.

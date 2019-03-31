@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\Diff\Utils\FileUtils;
+use Tmp\Diff\Utils\FileUtils;
 
 /**
- * @covers SebastianBergmann\Diff\Parser
+ * @covers Tmp\Diff\Parser
  *
- * @uses SebastianBergmann\Diff\Chunk
- * @uses SebastianBergmann\Diff\Diff
- * @uses SebastianBergmann\Diff\Line
+ * @uses Tmp\Diff\Chunk
+ * @uses Tmp\Diff\Diff
+ * @uses Tmp\Diff\Line
  */
 final class ParserTest extends TestCase
 {

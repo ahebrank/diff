@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff\Utils;
+namespace Tmp\Diff\Utils;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers SebastianBergmann\Diff\Utils\UnifiedDiffAssertTrait
+ * @covers Tmp\Diff\Utils\UnifiedDiffAssertTrait
  */
 final class UnifiedDiffAssertTraitTest extends TestCase
 {

@@ -8,18 +8,18 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
+use Tmp\Diff\Output\UnifiedDiffOutputBuilder;
 
 /**
- * @covers SebastianBergmann\Diff\Differ
- * @covers SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder
+ * @covers Tmp\Diff\Differ
+ * @covers Tmp\Diff\Output\UnifiedDiffOutputBuilder
  *
- * @uses SebastianBergmann\Diff\MemoryEfficientLongestCommonSubsequenceCalculator
- * @uses SebastianBergmann\Diff\TimeEfficientLongestCommonSubsequenceCalculator
- * @uses SebastianBergmann\Diff\Output\AbstractChunkOutputBuilder
+ * @uses Tmp\Diff\MemoryEfficientLongestCommonSubsequenceCalculator
+ * @uses Tmp\Diff\TimeEfficientLongestCommonSubsequenceCalculator
+ * @uses Tmp\Diff\Output\AbstractChunkOutputBuilder
  */
 final class DifferTest extends TestCase
 {

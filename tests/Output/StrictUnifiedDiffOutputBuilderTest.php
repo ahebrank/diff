@@ -8,19 +8,19 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff\Output;
+namespace Tmp\Diff\Output;
 
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\Diff\ConfigurationException;
-use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Utils\UnifiedDiffAssertTrait;
+use Tmp\Diff\ConfigurationException;
+use Tmp\Diff\Differ;
+use Tmp\Diff\Utils\UnifiedDiffAssertTrait;
 
 /**
- * @covers SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder
+ * @covers Tmp\Diff\Output\StrictUnifiedDiffOutputBuilder
  *
- * @uses SebastianBergmann\Diff\Differ
- * @uses SebastianBergmann\Diff\TimeEfficientLongestCommonSubsequenceCalculator
- * @uses SebastianBergmann\Diff\ConfigurationException
+ * @uses Tmp\Diff\Differ
+ * @uses Tmp\Diff\TimeEfficientLongestCommonSubsequenceCalculator
+ * @uses Tmp\Diff\ConfigurationException
  */
 final class StrictUnifiedDiffOutputBuilderTest extends TestCase
 {

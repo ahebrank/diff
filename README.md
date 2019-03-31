@@ -20,7 +20,7 @@ The `Differ` class can be used to generate a textual representation of the diffe
 
 ```php
 <?php
-use SebastianBergmann\Diff\Differ;
+use Tmp\Diff\Differ;
 
 $differ = new Differ;
 print $differ->diff('foo', 'bar');
@@ -44,8 +44,8 @@ This is default builder, which generates the output close to udiff and is used b
 ```php
 <?php
 
-use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\UnifiedDiffOutputBuilder;
+use Tmp\Diff\Differ;
+use Tmp\Diff\Output\UnifiedDiffOutputBuilder;
 
 $builder = new UnifiedDiffOutputBuilder(
     "--- Original\n+++ New\n", // custom header
@@ -64,8 +64,8 @@ similar to `diff -u` and compatible with `patch` and `git apply`.
 ```php
 <?php
 
-use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder;
+use Tmp\Diff\Differ;
+use Tmp\Diff\Output\StrictUnifiedDiffOutputBuilder;
 
 $builder = new StrictUnifiedDiffOutputBuilder([
     'collapseRanges'      => true, // ranges of length one are rendered with the trailing `,1`
@@ -88,8 +88,8 @@ Output only the lines that differ.
 ```php
 <?php
 
-use SebastianBergmann\Diff\Differ;
-use SebastianBergmann\Diff\Output\DiffOnlyOutputBuilder;
+use Tmp\Diff\Differ;
+use Tmp\Diff\Output\DiffOnlyOutputBuilder;
 
 $builder = new DiffOnlyOutputBuilder(
     "--- Original\n+++ New\n"
@@ -108,7 +108,7 @@ You can pass any output builder to the `Differ` class as longs as it implements 
 The `Parser` class can be used to parse a unified diff into an object graph:
 
 ```php
-use SebastianBergmann\Diff\Parser;
+use Tmp\Diff\Parser;
 use SebastianBergmann\Git;
 
 $git = new Git('/usr/local/src/money');
@@ -127,66 +127,66 @@ The code above yields the output below:
 
     Array
     (
-        [0] => SebastianBergmann\Diff\Diff Object
+        [0] => Tmp\Diff\Diff Object
             (
-                [from:SebastianBergmann\Diff\Diff:private] => a/tests/MoneyTest.php
-                [to:SebastianBergmann\Diff\Diff:private] => b/tests/MoneyTest.php
-                [chunks:SebastianBergmann\Diff\Diff:private] => Array
+                [from:Tmp\Diff\Diff:private] => a/tests/MoneyTest.php
+                [to:Tmp\Diff\Diff:private] => b/tests/MoneyTest.php
+                [chunks:Tmp\Diff\Diff:private] => Array
                     (
-                        [0] => SebastianBergmann\Diff\Chunk Object
+                        [0] => Tmp\Diff\Chunk Object
                             (
-                                [start:SebastianBergmann\Diff\Chunk:private] => 87
-                                [startRange:SebastianBergmann\Diff\Chunk:private] => 7
-                                [end:SebastianBergmann\Diff\Chunk:private] => 87
-                                [endRange:SebastianBergmann\Diff\Chunk:private] => 7
-                                [lines:SebastianBergmann\Diff\Chunk:private] => Array
+                                [start:Tmp\Diff\Chunk:private] => 87
+                                [startRange:Tmp\Diff\Chunk:private] => 7
+                                [end:Tmp\Diff\Chunk:private] => 87
+                                [endRange:Tmp\Diff\Chunk:private] => 7
+                                [lines:Tmp\Diff\Chunk:private] => Array
                                     (
-                                        [0] => SebastianBergmann\Diff\Line Object
+                                        [0] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>      * @covers SebastianBergmann\Money\Money::add
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>      * @covers SebastianBergmann\Money\Money::add
                                             )
 
-                                        [1] => SebastianBergmann\Diff\Line Object
+                                        [1] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>      * @covers SebastianBergmann\Money\Money::newMoney
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>      * @covers SebastianBergmann\Money\Money::newMoney
                                             )
 
-                                        [2] => SebastianBergmann\Diff\Line Object
+                                        [2] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>      */
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>      */
                                             )
 
-                                        [3] => SebastianBergmann\Diff\Line Object
+                                        [3] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 2
-                                                [content:SebastianBergmann\Diff\Line:private] =>     public function testAnotherMoneyWithSameCurrencyObjectCanBeAdded()
+                                                [type:Tmp\Diff\Line:private] => 2
+                                                [content:Tmp\Diff\Line:private] =>     public function testAnotherMoneyWithSameCurrencyObjectCanBeAdded()
                                             )
 
-                                        [4] => SebastianBergmann\Diff\Line Object
+                                        [4] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 1
-                                                [content:SebastianBergmann\Diff\Line:private] =>     public function testAnotherMoneyObjectWithSameCurrencyCanBeAdded()
+                                                [type:Tmp\Diff\Line:private] => 1
+                                                [content:Tmp\Diff\Line:private] =>     public function testAnotherMoneyObjectWithSameCurrencyCanBeAdded()
                                             )
 
-                                        [5] => SebastianBergmann\Diff\Line Object
+                                        [5] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>     {
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>     {
                                             )
 
-                                        [6] => SebastianBergmann\Diff\Line Object
+                                        [6] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>         $a = new Money(1, new Currency('EUR'));
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>         $a = new Money(1, new Currency('EUR'));
                                             )
 
-                                        [7] => SebastianBergmann\Diff\Line Object
+                                        [7] => Tmp\Diff\Line Object
                                             (
-                                                [type:SebastianBergmann\Diff\Line:private] => 3
-                                                [content:SebastianBergmann\Diff\Line:private] =>         $b = new Money(2, new Currency('EUR'));
+                                                [type:Tmp\Diff\Line:private] => 3
+                                                [content:Tmp\Diff\Line:private] =>         $b = new Money(2, new Currency('EUR'));
                                             )
                                     )
                             )

@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 /**
- * @covers SebastianBergmann\Diff\MemoryEfficientLongestCommonSubsequenceCalculator
+ * @covers Tmp\Diff\MemoryEfficientLongestCommonSubsequenceCalculator
  */
 final class MemoryEfficientImplementationTest extends LongestCommonSubsequenceTest
 {

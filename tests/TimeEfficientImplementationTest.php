@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace SebastianBergmann\Diff;
+namespace Tmp\Diff;
 
 /**
- * @covers SebastianBergmann\Diff\TimeEfficientLongestCommonSubsequenceCalculator
+ * @covers Tmp\Diff\TimeEfficientLongestCommonSubsequenceCalculator
  */
 final class TimeEfficientImplementationTest extends LongestCommonSubsequenceTest
 {
