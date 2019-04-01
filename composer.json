@@ -1,5 +1,5 @@
 {
-    "name": "tmp/diff",
+    "name": "ahebrank/diff",
     "description": "Diff implementation",
     "keywords": ["diff", "udiff", "unidiff", "unified diff"],
     "homepage": "https://github.com/sebastianbergmann/diff",
@@ -22,9 +22,9 @@
         "symfony/process": "^2 || ^3.3 || ^4"
     },
     "autoload": {
-        "classmap": [
-            "src/"
-        ]
+        "psr-4":{
+          "Tmp\\Diff": "src/"
+        }
     },
     "autoload-dev": {
         "classmap": [
