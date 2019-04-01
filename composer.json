@@ -22,9 +22,9 @@
         "symfony/process": "^2 || ^3.3 || ^4"
     },
     "autoload": {
-        "psr-4":{
-          "Tmp\\Diff\\": "src/"
-        }
+        "classmap": [
+            "src/"
+        ]
     },
     "autoload-dev": {
         "classmap": [
